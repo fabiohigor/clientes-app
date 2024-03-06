@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Cliente } from './clientes/Cliente';
-import { HttpClient } from '@Angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
@@ -16,6 +16,7 @@ export class ClientesService {
   }
 
   salvar ( cliente: Cliente ) : Observable<Cliente> {
+    
     return this.http.post<Cliente>(`${this.apiURL}`, cliente);
   }
 
@@ -24,6 +25,7 @@ export class ClientesService {
   }
 
   getClientes() : Observable<Cliente[]> {
+   
    return this.http.get<Cliente[]>(this.apiURL);
   }
 
