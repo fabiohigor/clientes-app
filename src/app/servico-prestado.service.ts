@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@Angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { ServicoPrestado } from './servico-prestado/servicoPrestado';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
